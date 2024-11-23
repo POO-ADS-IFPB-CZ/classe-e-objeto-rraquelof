@@ -61,4 +61,34 @@ A lâmpada possui os métodos: acende e apaga.
         System.out.println(num2);
     } 
     ```
-    
+
+    ## Questão 14
+    O encapsulamento tem a função de ocultar os detalhes internos de uma classe, isso é feito tanto para atributos quanto para métodos da classe através dos modificadores de acesso(private,protected,public,etc...).
+
+  - Exemplo:
+  Os atributos da classe lâmpada são somente acessíveis dentro da classe, isso ajuda a proteger informações sensíveis.
+
+  
+  ```
+  public class Lampada {
+    private int potencia;
+    private String marca;
+    private int quantidade;
+    private double preco;
+    private boolean aceso;
+  }
+  ```
+  - Exemplo:
+  No método abaixo há a verificação se a idade não é negativa.
+  
+  Dentro dos métodos getters e setters também é possível implementar validações.
+
+  ```
+   public void setIdade(int idade) {
+      if (idade >= 0) { // Garantir que a idade não seja negativa
+          this.idade = idade;
+      } else {
+          System.out.println("Idade inválida!");
+      }
+    }
+  ```
